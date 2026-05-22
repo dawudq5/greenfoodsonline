@@ -2039,7 +2039,7 @@
   }
 
   async function sendOrderNotification(order) {
-    const response = await fetch("send-order.php", {
+    const response = await fetch("https://formspree.io/f/xqejbjyg", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(order)
